@@ -1,5 +1,4 @@
 use crate::collision_detection::smallest_offset;
-use nalgebra::{Point, Point3, RealField};
 
 pub fn on_line<N: RealField, const D: usize>(
     p: &Point<N, D>,

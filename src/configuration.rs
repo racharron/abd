@@ -1,5 +1,4 @@
 use std::ops::{Add, AddAssign, Sub, SubAssign};
-use nalgebra::{ClosedAdd, ClosedDiv, ClosedMul, ClosedSub, Const, Matrix3, OVector, RealField, Storage, Vector, Vector3};
 
 /// An affine transformation.
 #[derive(Clone, Debug, PartialEq, Eq)]

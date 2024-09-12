@@ -1,6 +1,5 @@
 use crate::collision_detection::accd::ColliderPart;
 use crate::collision_detection::vertex::Vertex;
-use nalgebra::{Const, OVector, Point, RealField};
 
 /// A triangle, where each vertex has its own individual velocity.
 #[derive(Clone, Debug, PartialEq, Eq)]

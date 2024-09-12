@@ -1,4 +1,3 @@
-use nalgebra::{Const, RealField, Storage, Vector};
 
 pub fn aabb_segment<RF: RealField, const D: usize, S: Storage<RF, Const<D>>>(
     min: &Vector<RF, Const<D>, S>,

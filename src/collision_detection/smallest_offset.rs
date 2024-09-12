@@ -1,5 +1,4 @@
 use crate::collision_detection::closest_point;
-use nalgebra::{Const, OVector, Point, Point3, RealField, Vector3};
 
 /// From the vertex to the line.
 pub fn point_to_line<N: RealField, const D: usize>(

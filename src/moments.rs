@@ -1,5 +1,3 @@
-use nalgebra::{Const, Matrix3, Matrix4, OMatrix, RealField};
-
 /// The mass matrix takes the form of
 /// ```py
 /// Matrix([

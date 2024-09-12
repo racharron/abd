@@ -11,7 +11,6 @@ mod collider;
 #[cfg(test)]
 mod tests;
 */
-use nalgebra::RealField;
 pub use segment::Segment;
 pub use triangle_face::TriangleFace;
 pub use vertex::Vertex;

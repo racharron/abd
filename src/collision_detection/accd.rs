@@ -2,14 +2,14 @@ use crate::collision_detection::distance_squared;
 use crate::collision_detection::segment::Segment;
 use crate::collision_detection::triangle_face::TriangleFace;
 use crate::collision_detection::vertex::Vertex;
-use nalgebra::{Const, OVector, Point, RealField};
 use std::marker::PhantomData;
+use faer::RealField;
 
 /// Implemented by types that represent a distinct part of a collider that is tested for collision
 /// detection.  For example, for two colliding triangular meshes, that would be the edges, faces,
 /// and vertices.
 pub trait ColliderPart<const D: usize> {
-    type Scalar: RealField;
+    type Vector: ;
     /// Advance the translation of this part (move the vertices linearly).
 
     fn advance(&mut self, step: Self::Scalar);

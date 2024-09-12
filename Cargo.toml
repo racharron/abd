@@ -6,14 +6,14 @@ resolver = "2"
 description = "The components needed for putting together a physics engine"
 
 [dependencies]
-nalgebra = "0.32"
-num = "0.4"
+num-traits = { workspace = true }
 # maybe use the "union" feature?
-smallvec = { version = "1", features = ["const_generics", "const_new"] }
+smallvec = { workspace = true }
 hashbrown = "0.14"
 # Minor warning fix in macro was done, but no new release has been published for years.
-partitions = { git = "https://github.com/DDOtten/partitions.git", rev = "bf444c7" }
+partitions = { workspace = true }
+faer = "0.19"
 
 [dev-dependencies]
 rand = "0.8"
-nalgebra = { version = "0.32", features = ["rand"] }
+faer = { version = "0.19", features = ["rand"] }

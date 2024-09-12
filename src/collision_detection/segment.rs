@@ -1,6 +1,5 @@
 use crate::collision_detection::accd::ColliderPart;
 use crate::collision_detection::vertex::Vertex;
-use nalgebra::{Const, OVector, Point, RealField};
 
 /// A line segment defined by its two end points.
 #[derive(Clone, Debug, PartialEq, Eq)]

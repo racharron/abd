@@ -1,6 +1,5 @@
 use std::hash::Hash;
 use hashbrown::HashMap;
-use nalgebra::RealField;
 use crate::{AffineTransform, Moments};
 use crate::spatial::SpatialDB;
 

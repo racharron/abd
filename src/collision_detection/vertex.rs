@@ -1,5 +1,4 @@
 use crate::collision_detection::accd::ColliderPart;
-use nalgebra::{Const, OVector, Point, RealField};
 
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct Vertex<N: RealField, const D: usize> {

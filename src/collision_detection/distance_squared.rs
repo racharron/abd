@@ -1,7 +1,6 @@
 use super::{closest_point, smallest_offset};
 use crate::collision_detection::segment::Segment;
 use crate::collision_detection::vertex::Vertex;
-use nalgebra::{Const, OVector, Point, Point3, RealField};
 
 pub fn point_point<N: RealField, const D: usize>(o1: &Vertex<N, D>, o2: &Vertex<N, D>) -> N {
     nalgebra::distance_squared(&o1.x, &o2.x)

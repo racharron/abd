@@ -1,4 +1,3 @@
-use nalgebra::RealField;
 use crate::spatial::Object;
 
 mod triangle_mesh;

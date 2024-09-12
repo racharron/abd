@@ -1,5 +1,4 @@
 use crate::collision_detection::{Segment, TriangleFace, Vertex};
-use nalgebra::{Point, RealField};
 
 // pub mod hash_grid;
 // pub mod hierarchical_hash_grid;
