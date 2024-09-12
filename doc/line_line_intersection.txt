@@ -1,0 +1,1 @@
+0 == (P1 - P2 + E1*t1 - E2*t2) . (P1 - P2 + E1*t1 - E2*t2) && Element[t1 | t2, Reals] && Element[P1 | P2 | E1 | E2, Vectors[3, Reals]]

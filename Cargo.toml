@@ -1,0 +1,27 @@
+[workspace]
+resolver = "2"
+
+members = [
+	"abd_kit",
+	"bevy_abd"
+]
+
+[workspace.dependencies]
+num-traits = "0.2"
+ultraviolet = { version = "0.9", features = ["num-traits"] }
+faer = { version = "0.19" }
+# maybe use the "union" feature?
+smallvec = { version = "1", features = ["const_generics", "const_new"] }
+hashbrown = "0.14"
+# Minor warning fix in macro was done, but no new release has been published for years.
+partitions = { git = "https://github.com/DDOtten/partitions.git", rev = "bf444c7" }
+rand = "0.8"
+
+
+[profile.dev.package.bevy_abd]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 2
+
+
