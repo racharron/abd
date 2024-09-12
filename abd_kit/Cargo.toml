@@ -1,0 +1,19 @@
+[package]
+name = "abd_kit"
+version = "0.1.0"
+edition = "2021"
+resolver = "2"
+description = "The components needed for putting together a physics engine"
+
+[dependencies]
+num-traits = { workspace = true }
+# maybe use the "union" feature?
+smallvec = { workspace = true }
+hashbrown = "0.14"
+# Minor warning fix in macro was done, but no new release has been published for years.
+partitions = { workspace = true }
+faer = "0.19"
+
+[dev-dependencies]
+rand = "0.8"
+faer = { version = "0.19", features = ["rand"] }
